@@ -1,6 +1,6 @@
 {
-  "name": "React Next - Boilerplate",
-  "short_name": "React Next",
+  "name": "My Trips",
+  "short_name": "My Trips",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -21,7 +21,7 @@
   ],
   "theme_color": "#06092B",
   "background_color": "#06092B",
-  "description": "Boilerplate utilizando TypeScript, ReactJS, NextJS e Styled Component!",
+  "description": "A simple project to show my favorite spots in the world.",
   "start_url": "/",
   "display": "fullscreen"
 }
