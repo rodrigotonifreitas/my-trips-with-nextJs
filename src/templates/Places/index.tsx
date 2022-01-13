@@ -25,6 +25,8 @@ export type PlacesTemplateProps = {
   }
 }
 
+const URL_PROJECT = process.env.NEXT_PUBLIC_URL_PROJECT
+
 export default function PlacesTemplate({ place }: PlacesTemplateProps) {
   const router = useRouter()
 
@@ -38,9 +40,9 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
           place.description?.text ||
           'A simple project to show in a map the places that I went and show more informations and photos when clicked.'
         }
-        canonical="https://mytrips.com"
+        canonical={URL_PROJECT}
         openGraph={{
-          url: 'https://mytrips.com',
+          url: URL_PROJECT,
           title: `${place.name} - My Trips`,
           description:
             place.description?.text ||

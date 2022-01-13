@@ -5,6 +5,8 @@ import LinkWrapper from 'components/LinkWrapper'
 
 import * as S from './styles'
 
+const URL_PROJECT = process.env.NEXT_PUBLIC_URL_PROJECT
+
 export type PageTemplateProps = {
   heading: string
   body: {
@@ -21,9 +23,9 @@ const PageTemplate = ({ heading, body }: PageTemplateProps) => (
         body?.text ||
         'A simple project to show in a map the places that I went and show more informations and photos when clicked.'
       }
-      canonical="https://mytrips.com"
+      canonical={URL_PROJECT}
       openGraph={{
-        url: 'https://mytrips.com',
+        url: URL_PROJECT,
         title: `${heading} - My Trips`,
         description:
           body?.text ||

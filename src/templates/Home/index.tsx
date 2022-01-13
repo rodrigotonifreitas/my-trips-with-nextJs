@@ -8,21 +8,23 @@ import { MapProps } from 'components/Map'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
+const URL_PROJECT = process.env.NEXT_PUBLIC_URL_PROJECT
+
 export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
       <NextSeo
         title="My Trips"
         description="A simple project to show in a map the places that I went and show more informations and photos when clicked."
-        canonical="https://my-trips.com.br"
+        canonical={URL_PROJECT}
         openGraph={{
-          url: 'https://my-trips.com.br',
+          url: URL_PROJECT,
           title: 'My Trips',
           description:
             'A simple project to show in a map the places that I went and show more informations and photos when clicked.',
           images: [
             {
-              url: 'https://my-trips.com.br/img/cover.png',
+              url: `${URL_PROJECT}/img/cover.png`,
               width: 1280,
               height: 720,
               alt: 'My Trips'
