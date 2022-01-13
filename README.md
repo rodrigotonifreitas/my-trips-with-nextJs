@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este é um projeto criado com o Next.js com o intuito de praticar e consolidar os conhecimentos do framework.
 
-## Getting Started
+## Começando
 
-First, run the development server:
+Para executar o projeto localmente, é necessário fazer o clone do repositório em sua máquina:
+
+```bash
+git clone https://github.com/rodrigotonifreitas/my-trips-with-nextJs.git && cd my-trips-with-nextJs
+```
+Com o node.js e yarn/npm instalados basta executar o comando:
+
+```bash
+npm i
+# ou
+yarn
+```
+
+Assim fará a instalação de todas dependências e em seguida rode o projeto a partir do comando:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## O que é o My Trips
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+O My Trips é um projeto com fins didáticos, nele foi desenvolvido um site onde é possivel renderizar um mapa onde via uma api em GraphicQL consumimos o serviço e marcamos pontos nos mapas com informações sobre os locais.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para o projeto, fiz uso do framework ReactJs e NextJs com TypeScript para o desenvolvimento do front-end, para o back-end usei o serviço GraphCMS onde foi gerado uma api GraphQL e o Styled Components para estilizar os componentes.
 
-## Learn More
+No boilerplate, configurei o ESLint e o Prettier para auxiliar no desenvolvimento, o Jest para a escrita dos testes e o husky a fim de integrar toda validação e teste a cada commit feito para o git.
 
-To learn more about Next.js, take a look at the following resources:
+O projeto conta com o pacote de PWA e com isso é possível acessá-lo de forma off-line e também baixá-lo como um app, além de todo recurso de cache e mensageria.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O deploy do projeto foi todo feito na Vercel através de sua CLI e integrado com o GitHub.
+Configurei o projeto para ser revalidado a cada 5s para as páginas dinâmicas. (ISR. Incremental Static Regeneration)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Caso tenha alguma dúvida ou sugestão a respeito do projeto, por favor, reporte através de issues.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Obrigado!
