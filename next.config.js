@@ -4,14 +4,11 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withPWA({
   reactStrictMode: true,
+  images: {
+    domains: ['media.graphcms.com']
+  },
   pwa: {
     dest: 'public',
     disable: !isProd
   }
 })
-
-module.exports = {
-  images: {
-    domains: ['media.graphcms.com']
-  }
-}
